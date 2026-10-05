@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Hunter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <h1>⚡ Code Hunter</h1>
+
+            <p>Your Coding Assistant</p>
+
+            <button onclick="newChat()">
+                + New Chat
+            </button>
+
+            <div class="features">
+
+                <h3>Features</h3>
+
+                <p>💻 Code Generation</p>
+                <p>🐛 Debugging</p>
+                <p>📚 Code Explanation</p>
+                <p>🚀 Project Ideas</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Main Chat -->
+        <div class="main">
+
+            <!-- Header -->
+            <div class="header">
+
+                <div>
+                    <h2>Code Hunter</h2>
+
+                    <span>
+                        ● Online
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Messages -->
+            <div class="chat-box" id="chatBox">
+
+                <div class="message bot">
+
+                    <div class="avatar">
+                        ⚡
+                    </div>
+
+                    <div class="bubble">
+
+                        <strong>Code Hunter</strong>
+
+                        <p>
+                            Hello 👋<br><br>
+
+                            I'm Code Hunter, your coding assistant.
+
+                            <br><br>
+
+                            Ask me about HTML, CSS, JavaScript,
+                            Python, C++, Java and more.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Suggestions -->
+            <div class="suggestions">
+
+                <button onclick="askQuestion('Explain JavaScript')">
+                    Explain JavaScript
+                </button>
+
+                <button onclick="askQuestion('Create Python calculator')">
+                    Python Calculator
+                </button>
+
+                <button onclick="askQuestion('Help me debug my code')">
+                    🐛 Debug Code
+                </button>
+
+            </div>
+
+
+            <!-- Input -->
+            <form class="input-area" onsubmit="sendMessage(event)">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask Code Hunter..."
+                >
+
+                <button type="submit">
+                    ➤
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
